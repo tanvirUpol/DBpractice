@@ -23,22 +23,25 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    @*first push*@
-    @*first pull*@
-    @*2nd pull*@
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
+    @foreach (var item in Model)
+    {
+        @*first push*@
+        @*first pull*@
+        @*2nd pull*@
+        @*2nd push*@
 
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
 
-       
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
 
-    </tr>
-}
+
+
+        </tr>
+    }
 
 </table>
