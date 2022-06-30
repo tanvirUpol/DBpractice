@@ -24,11 +24,20 @@
     </tr>
 
 @foreach (var item in Model) {
+    //first push
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>
-       
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+
     </tr>
 }
 
